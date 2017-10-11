@@ -10,7 +10,7 @@ header {
   font-size: 14px;
   font-weight: bold;
   border-bottom: 1px;
-  border-bottom: 1px solid black; 
+  border-bottom: 1px solid black;
 }
 header nav {
   padding-right: 40px;
@@ -71,6 +71,8 @@ div{
 }
 /*Add images- This is step */
 .image-content{
+  display: flex;
+  flex-direction: column;
   height: 300px;
   margin-top: 15px;
   font-family: Georgia;
@@ -78,13 +80,19 @@ div{
   text-align: center;
   color: white;
   font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+.lead-story .image-content span{
+  padding-left: 20px;
 }
 .lead-story .image-content {
   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png');
   width: 630px;
-  margin: 0;
-  font-size: 40px;
+
+  font-size: 30px;
   text-align: left;
+
 }
 .fall-cancelled.image-content {
   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png');
